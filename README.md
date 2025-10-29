@@ -10,9 +10,9 @@
 
 - Mock the SOAP Client: this is the true unit testing approach
 - Use a mock service: build a mock service that the SOAP client can call, using the wsdl file. This is an integration test approach where the request-response pipeline is also tested.
-  - Use `WebApplicationFactory` to instantiate the mock service
-  - Use `IHost` and `IHostBuilder` to create an instance of the mock service
-  - Use `TestContainers` 
+  - Use `WebApplicationFactory` to create an in-memory instance of the mock service
+  - Use `IHost` and `IHostBuilder` to run the mock service using Kestrel
+  - Use `TestContainers` to run a containerized mock service, which requires the creation of a docker image, as well as running Docker
  
 
 ## Comparison
