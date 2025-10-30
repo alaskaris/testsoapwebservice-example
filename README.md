@@ -36,3 +36,5 @@
 **Sources**
 - [How do I integration test a SoapCore endpoint? (Stack Overflow)](https://stackoverflow.com/questions/66338805/how-do-i-integration-test-a-soapcore-endpoint)
 - [Integration tests in ASP.NET Core (Microsoft Learn)](https://learn.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-9.0&pivots=xunit)
+- [SOAP Web Service in .NET Core (C# Corner)](https://www.c-sharpcorner.com/article/soap-web-service-in-net-core/)
+- [asammad48/SOAPAPIDotNetCore (github)](https://github.com/asammad48/SOAPAPIDotNetCore)
