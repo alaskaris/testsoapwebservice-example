@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0D27C9B2-F87F-437C-885D-27AF9F5D3D6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E9D3F258-1254-4034-B9B7-8E5985782207}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoWebService", "src\DemoWebService\DemoWebService.csproj", "{56E5315E-8699-49B4-BC4C-87A208283D7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoWebServiceClient", "src\DemoWebServiceClient\DemoWebServiceClient.csproj", "{C6BEB335-B13C-4008-824C-56A00A7653DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{56E5315E-8699-49B4-BC4C-87A208283D7A} = {0D27C9B2-F87F-437C-885D-27AF9F5D3D6A}
+		{C6BEB335-B13C-4008-824C-56A00A7653DA} = {0D27C9B2-F87F-437C-885D-27AF9F5D3D6A}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56E5315E-8699-49B4-BC4C-87A208283D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56E5315E-8699-49B4-BC4C-87A208283D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56E5315E-8699-49B4-BC4C-87A208283D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56E5315E-8699-49B4-BC4C-87A208283D7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6BEB335-B13C-4008-824C-56A00A7653DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6BEB335-B13C-4008-824C-56A00A7653DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6BEB335-B13C-4008-824C-56A00A7653DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6BEB335-B13C-4008-824C-56A00A7653DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
