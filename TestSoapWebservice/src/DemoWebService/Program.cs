@@ -3,18 +3,24 @@ using SoapCore;
 
 namespace DemoWebService;
 
-public class Program
+// Adding partial to make it accessible in tests
+public partial class Program
 {
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        // Add SOAP services to the container.
-        builder.Services.AddSoapCore();
-        builder.Services.AddScoped<WebServices.CalculatorSoapService>();
+        ConfigureServices(builder.Services);
 
         var app = builder.Build();
 
+        ConfigureMiddleware(app);
+
+        app.Run();
+    }
+
+    public static void ConfigureMiddleware(WebApplication app)
+    {
         app.UseRouting();
 
 #pragma warning disable ASP0014
@@ -26,7 +32,12 @@ public class Program
                 serializer: SoapSerializer.XmlSerializer);
         });
 #pragma warning restore ASP0014
+    }
 
-        app.Run();
+    public static void ConfigureServices(IServiceCollection serviceCollection)
+    {
+        // Add SOAP services to the container.
+        serviceCollection.AddSoapCore();
+        serviceCollection.AddSingleton<ICalculatorSoapService, CalculatorSoapService>();
     }
 }
