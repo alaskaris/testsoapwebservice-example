@@ -1,0 +1,17 @@
+﻿### Test WSDL endpoint
+GET http://localhost:5168/demo.svc?wsdl
+
+### Test Add method (SOAP request)
+POST http://localhost:5168/demo.svc
+Content-Type: text/xml; charset=utf-8
+SOAPAction: "http://tempuri.org/Sum"
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <Sum xmlns="http://tempuri.org/">
+      <num1>5</num1>
+      <num2>3</num2>
+    </Sum>
+  </soap:Body>
+</soap:Envelope>
