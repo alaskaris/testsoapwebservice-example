@@ -1,6 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0D27C9B2-F87F-437C-885D-27AF9F5D3D6A}"
+	ProjectSection(SolutionItems) = preProject
+		src\README.md = src\README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E9D3F258-1254-4034-B9B7-8E5985782207}"
 	ProjectSection(SolutionItems) = preProject
