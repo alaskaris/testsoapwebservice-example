@@ -22,6 +22,7 @@ public class DemoWebServiceClientTests : IAsyncLifetime
             .WithDockerfileDirectory(Path.Combine(projectDirectory,"src")) // Docker context
             .WithDockerfile("DemoWebService/Dockerfile") // Path to Dockerfile
             .WithName(imageName)
+            .WithCleanUp(true) // Cleanup intermediate containers
             .Build();
         
         // Build the image
