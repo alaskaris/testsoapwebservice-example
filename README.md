@@ -1,4 +1,5 @@
-# How to test a SOAP web service
+# Integration Testing Strategies for SOAP Clients in .NET
+*How to Test Code Using SOAP Clients Without Live Services*
 
 ## Assumptions
 
@@ -38,3 +39,11 @@
 - [Integration tests in ASP.NET Core (Microsoft Learn)](https://learn.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-9.0&pivots=xunit)
 - [SOAP Web Service in .NET Core (C# Corner)](https://www.c-sharpcorner.com/article/soap-web-service-in-net-core/)
 - [asammad48/SOAPAPIDotNetCore (github)](https://github.com/asammad48/SOAPAPIDotNetCore)
+
+## Prerequisites
+
+- .NET 8.0 or later
+- An OpenTelemetry collector or compatible backend (optional for testing)
+
+## License
+This project is provided as-is for educational purposes.
