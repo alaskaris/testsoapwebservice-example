@@ -1,10 +1,10 @@
-# How to test code that is using a SOAP client
+# How to test a SOAP web service
 
 ## Assumptions
 
 - You have a SOAP client that is targeting a SOAP Web Service.
 - The SOAP client is used by some code that is making a request and gets a response, and you want to test this code.
-- The target SOAP Web Service is not available for testing or it is available only during a certain period of time, making it difficult to assume that it is always online
+- The target SOAP Web Service is not available for testing or it is available only during a certain period of time, making it difficult to assume that it is always online.
 
 ## Options
 
