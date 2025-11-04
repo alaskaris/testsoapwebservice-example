@@ -45,7 +45,6 @@ Create a fake SOAP service that responds to your client's requests. This integra
 ## Prerequisites
 
 - .NET 8.0 or later
-- An OpenTelemetry collector or compatible backend (optional for testing)
 
 ## License
 This project is provided as-is for educational purposes.
