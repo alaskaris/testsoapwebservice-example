@@ -3,18 +3,20 @@
 
 ## Assumptions
 
-- You have a SOAP client that is targeting a SOAP Web Service.
-- The SOAP client is used by some code that is making a request and gets a response, and you want to test this code.
-- The target SOAP Web Service is not available for testing or it is available only during a certain period of time, making it difficult to assume that it is always online.
+- You have code that consumes a SOAP Web Service through a SOAP client.
+- You need to test this code's request/response handling.
+- The target SOAP Web Service is unreliable for testing purposes—either unavailable, intermittently accessible, or not guaranteed to be online.
 
 ## Options
 
-- Mock the SOAP Client: this is the true unit testing approach
-- Use a mock service: build a mock service that the SOAP client can call, using the wsdl file. This is an integration test approach where the request-response pipeline is also tested.
-  - Use `WebApplicationFactory` to create an in-memory instance of the mock service
-  - Use `IHost` and `IHostBuilder` to run the mock service using Kestrel
-  - Use `TestContainers` to run a containerized mock service, which requires the creation of a docker image, as well as running Docker
- 
+**1. Mock the SOAP Client**  
+Replace the SOAP client with a test double. This is the pure unit testing approach that isolates your code from external dependencies.
+
+**2. Mock the SOAP Service**  
+Create a fake SOAP service that responds to your client's requests. This integration testing approach validates the entire request-response pipeline. You can implement this using:
+- **WebApplicationFactory**: Hosts the mock service in-memory for fast, isolated tests
+- **IHost with Kestrel**: Runs the mock service as a real HTTP server on localhost
+- **Testcontainers**: Runs the mock service in a Docker container for production-like testing
 
 ## Comparison
 ### Host vs WebApplicationFactory
